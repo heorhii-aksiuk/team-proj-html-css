@@ -2,8 +2,59 @@
 <footer class="footer">
   <div class="container">
     <a class="footer__logo link" href="./index.html">
-      <img class="footer__logo-img" src="/images/logo.png" alt="logo hellish english" />
-    </a>
+      <picture>
+                <source
+                  srcset="
+                    ./images/logo/logo-desktop.webp    1x,
+                    ./images/logo/logo-desktop2x.webp 2x
+                  "
+                  media="(min-width: 1366px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/logo/logo-desktop.png    1x,
+                    ./images/logo/logo-desktop2x.png 2x
+                  "
+                  media="(min-width: 1366px)"
+                />
+                <source
+                  srcset="
+                    ./images/logo/logo-tablet..webp    1x,
+                    ./images/logo/logo-tablet.2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/logo/logo-tablet.png    1x,
+                    ./images/logo/logo-tablet2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/logo/logo-mob.webp    1x,
+                    ./images/logo/logo-mob@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/logo/logo-mob.png    1x,
+                    ./images/logo/logo-mob2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="footer__logo-img"
+                  src="./images/logo/logo-mob.png"
+                  alt="Logo Hellish English"
+                />
+              </picture>
+          </a>
     <ul class="footer__contact-list list">
       <li class="footer__contact-item">
         <a class="footer__tel link" href="tel:+380000000000">
@@ -15,6 +66,34 @@
       </li>
       <li class="footer__contact-item">
         <a class="footer__social-network" href="#" target="_blank" rel="noreferrer noopener">
+          <picture>
+            <source
+              srcset="
+                ./images/instagram-icon/instagram-icon-desktop.jpg    1x,
+                ./images/instagram-icon/instagram-icon-desktop@2x.jpg 2x
+              "
+              media="(min-width: 1366px)"
+            />
+            <source
+              srcset="
+                ./images/instagram-icon/instagram-icon-tablet.png    1x,
+                ./images/instagram-icon/instagram-icon-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/instagram-icon/instagram-icon-mobile.png    1x,
+                ./images/instagram-icon/instagram-icon-mobile@2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              class="footer__instagram-img"
+              src="./images/instagram-icon/instagram-icon-mobile.png"
+              alt="instagram"
+            />
+          </picture>
           <img class="footer__social-icon" src="/images/instagram-icon.png" alt="instagram" />
         </a>
       </li>
