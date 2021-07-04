@@ -45,7 +45,7 @@
     margin-top: 5px;
 
     font-size: 12px;
-    line-height: 164.9%;
+    line-height: 1.67;
     text-transform: none;
     color: $accent-color;
   }
@@ -80,7 +80,7 @@
   background: $accent-color;
 }
 
-/* псевдоэлемент полоса */
+// псевдоэлемент полоса
 
 .program__list::before {
   content: '';
@@ -93,7 +93,7 @@
   border-left: 1px solid $white-color;
 }
 
-/* псевдоэлемент картинка */
+// псевдоэлемент картинка
 
 .program__wrapper::after {
   content: '';
@@ -109,11 +109,94 @@
   background-size: cover;
   opacity: 0.5;
 }
-/* 2x screens, image */
+// 2x screens, image
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .program__wrapper::after {
     background-image: url(../images/program/lesson-mobile@2x.png);
+  }
+}
+
+// tablet styles
+@media screen and (min-width: 768px) {
+  .program {
+    padding-top: 60px;
+    padding-bottom: 392px;
+
+    &__container {
+      max-width: 768px;
+      margin: 0 auto;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    &__title {
+      margin-bottom: 52px;
+      text-align: start;
+    }
+
+    &__wrapper {
+      padding-left: 63px;
+    }
+
+    &__list {
+      position: relative;
+      padding-left: 56px;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .semester__list {
+    display: flex;
+  }
+
+  .semester__item:first-child {
+    max-width: 176px;
+    width: 100%;
+  }
+  .semester__item:nth-child(2) {
+    max-width: 155px;
+    width: 100%;
+    margin-left: 50px;
+  }
+  .semester__item:nth-child(3) {
+    max-width: 110px;
+    width: 100%;
+    margin-left: 50px;
+  }
+
+  //    псевдоэлемент точка для планшета
+
+  .program__item::before {
+    left: -61px;
+  }
+
+  // псевдоэлемент полоса для планшета
+
+  .program__list::before {
+    height: calc(100% - 94px);
+  }
+
+  // псевдоэлемент картинка для планшета
+
+  .program__wrapper::after {
+    bottom: 253px;
+
+    width: 384px;
+    height: 280px;
+    background-image: url(../images/program/lesson-tablet.png);
+  }
+
+  // 2x screens, image for tablet
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .program__wrapper::after {
+      background-image: url(../images/program/lesson-tablet@2x.png);
+    }
   }
 }
