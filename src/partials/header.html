@@ -1,151 +1,172 @@
 <header class="header section header-section">
-      <div class="header__container">
-        <div class="logo logo-header logo-mobile-menu">
-          <a class="logo__link link" href="./index.html">
-            <p class="logo__text-hell">Hell</p>
-            <img
-              class="logo__fire-icon"
-              src="./images/icons/fire-icon.svg"
-              alt="Иконка огонька в лого"
-            />
-          </a>
-          <p class="logo__text-en">EN</p>
-          <div class="logo__bottom-line">
-            <p class="logo__text-hellish">hellish</p>
-            <p class="logo__text-english">english</p>
+  <div class="header__container">
+    <div class="logo logo-header logo-mobile-menu">
+      <a class="logo__link link" href="./index.html">
+        <picture>
+          <source
+            srcset="./images/logo/logo-desktop.webp 1x, ./images/logo/logo-desktop2x.webp 2x"
+            media="(min-width: 1366px)"
+            type="image/webp"
+          />
+          <source
+            srcset="./images/logo/logo-desktop.png 1x, ./images/logo/logo-desktop2x.png 2x"
+            media="(min-width: 1366px)"
+          />
+          <source
+            srcset="./images/logo/logo-tablet.webp 1x, ./images/logo/logo-tablet2x.webp 2x"
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="./images/logo/logo-tablet.png 1x, ./images/logo/logo-tablet2x.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./images/logo/logo-mob.webp 1x, ./images/logo/logo-mob2x.webp 2x"
+            media="(max-width: 479px)"
+            type="image/webp"
+          />
+          <source
+            srcset="./images/logo/logo-mob.png 1x, ./images/logo/logo-mob2x.png 2x"
+            media="(max-width: 479px)"
+          />
+          <img class="logo__img" src="#" alt="Logo Hellen include fire icon" />
+        </picture>
+      </a>
+    </div>
+    <nav class="nav">
+      <div class="nav__container container nav__mobile-menu">
+        <ul class="nav__list list">
+          <li class="nav__item">
+            <a class="nav__link nav__link--accent link" href="#studying-program"
+              >studying program</a
+            >
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--accent link" href="#about">about</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link nav__link--accent link" href="#training-option">training options</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--accent link" href="#contacts">contacts</a>
+          </li>
+        </ul>
+      </div>
+      <div class="btn-container btn-container-consultation">
+        <button type="button" class="btn btn-consultation btn-consultation-header" data-modal-open>
+          consultation by phone
+        </button>
+      </div>
+      <button type="button" class="header-mobile-menu-btn" data-menu-button>
+        <svg>
+          <use href="./images/icons/sprite.svg#burger-icon"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu mobile-menu-section" data-menu>
+        <div class="mobile-menu__container">
+          <button
+            type="button"
+            class="mobile-menu__close-btn mobile-menu__close-btn--accent"
+            data-menu-close
+          >
+            <svg class="mobile-menu__close-btn-svg" width="15px" height="15px">
+              <use href="./images/icons/sprite.svg#close-mobile-icon"></use>
+            </svg>
+          </button>
+          <div class="logo logo-header logo-mobile-menu">
+            <a class="logo__link link" href="./index.html">
+              <picture>
+                <source
+                  srcset="
+                    ./images/logo/logo-tablet-menu.webp   1x,
+                    ./images/logo/logo-tablet-menu2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/logo/logo-tablet-menu.png   1x,
+                    ./images/logo/logo-tablet-menu2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/logo/logo-mob-menu.webp   1x,
+                    ./images/logo/logo-mob-menu2x.webp 2x
+                  "
+                  media="(max-width: 479px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/logo/logo-mob-menu.png 1x, ./images/logo/logo-mob-menu2x.png 2x"
+                  media="(max-width: 479px)"
+                />
+                <img class="logo__img-mobile-menu" src="#" alt="Logo Hellen include fire icon" />
+              </picture>
+            </a>
           </div>
-        </div>
-        <nav class="nav">
-          <div class="nav__container container nav__mobile-menu">
-            <ul class="nav__list list">
-              <li class="nav__item">
-                <a class="nav__link nav__link--accent link" href="#studying-program"
-                  >studying program</a
+          <div class="nav__list-mobile-menu-container">
+            <ul class="nav__list nav__list-mobile-menu list">
+              <li class="nav__item nav__item-mobile-menu">
+                <a
+                  class="
+                    nav__link nav__link--accent nav__link-mobile-menu nav__link-mobile-menu--accent
+                    link
+                  "
+                  href="#studying-program"
+                  >Studying program</a
                 >
               </li>
-              <li class="nav__item">
-                <a class="nav__link nav__link--accent link" href="#about">about</a>
-              </li>
-              
-              <li class="nav__item">
-                <a class="nav__link nav__link--accent link" href="#training-option"
-                  >studying program</a
+              <li class="nav__item nav__item-mobile-menu">
+                <a
+                  class="
+                    nav__link nav__link--accent nav__link-mobile-menu nav__link-mobile-menu--accent
+                    link
+                  "
+                  href="#about"
+                  >About</a
                 >
               </li>
-                            <li class="nav__item">
-                <a class="nav__link nav__link--accent link" href="#contacts">contacts</a>
+
+              <li class="nav__item nav__item-mobile-menu">
+                <a
+                  class="
+                    nav__link nav__link--accent nav__link-mobile-menu nav__link-mobile-menu--accent
+                    link
+                  "
+                  href="#training-option"
+                  >Training options</a
+                >
               </li>
-              
+              <li class="nav__item nav__item-mobile-menu">
+                <a
+                  class="
+                    nav__link nav__link--accent nav__link-mobile-menu nav__link-mobile-menu--accent
+                    link
+                  "
+                  href="#contacts"
+                  >Contacts</a
+                >
+              </li>
             </ul>
           </div>
-          <div class="btn-container btn-container-consultation">
-            <button type="button" class="btn btn-consultation btn-consultation-header" data-modal-open>
+          <div
+            class="btn-container btn-container-consultation btn-container-consultation-mobile-menu"
+          >
+            <button
+              type="button"
+              class="btn btn-consultation btn-consultation-mobile-menu"
+              data-modal-open
+            >
               consultation by phone
             </button>
           </div>
-          <button type="button" class="header-mobile-menu-btn" data-menu-button>
-            <svg>
-              <use href=""></use>
-            </svg>
-          </button>
-          <div class="mobile-menu mobile-menu-section" data-menu>
-            <div class="mobile-menu__container">
-              <button
-                type="button"
-                class="mobile-menu__close-btn mobile-menu__close-btn--accent"
-                data-menu-close
-              >
-                <svg class="mobile-menu__close-btn-svg" width="15px" height="15px">
-                  <use href=""></use>
-                </svg>
-              </button>
-              <div class="logo logo-header logo-mobile-menu">
-                <a class="logo__link logo__link-mobile-menu link" href="./index.html">
-                  <p class="logo__text-hell logo__text-hell-mobile-menu">Hell</p>
-                  <img
-                    class="logo__fire-icon logo__fire-icon-mobile-menu"
-                    src="./images/icons/fire-icon.svg"
-                    alt="Иконка огонька в лого"
-                  />
-                </a>
-                <p class="logo__text-en logo__text-en-mobile-menu">EN</p>
-                <div class="logo__bottom-line logo__bottom-line-mobile-menu">
-                  <p class="logo__text-hellish logo__text-hellish-mobile-menu">hellish</p>
-                  <p class="logo__text-ENGLISH logo__text-ENGLISH-mobile-menu">english</p>
-                </div>
-              </div>
-              <div class="nav__list-mobile-menu-container">
-                <ul class="nav__list nav__list-mobile-menu list">
-                  <li class="nav__item nav__item-mobile-menu">
-                    <a
-                      class="
-                        nav__link
-                        nav__link--accent
-                        nav__link-mobile-menu
-                        nav__link-mobile-menu--accent
-                        link
-                      "
-                      href="#studying-program"
-                      >studying program</a
-                    >
-                  </li>
-                  <li class="nav__item nav__item-mobile-menu">
-                    <a
-                      class="
-                        nav__link
-                        nav__link--accent
-                        nav__link-mobile-menu
-                        nav__link-mobile-menu--accent
-                        link
-                      "
-                      href="#about"
-                      >about</a
-                    >
-                  </li>
-                  
-                  <li class="nav__item nav__item-mobile-menu">
-                    <a
-                      class="
-                        nav__link
-                        nav__link--accent
-                        nav__link-mobile-menu
-                        nav__link-mobile-menu--accent
-                        link
-                      "
-                      href="#training-option"
-                      >studying program</a
-                    >
-                  </li>
-                  <li class="nav__item nav__item-mobile-menu">
-                    <a
-                      class="
-                        nav__link
-                        nav__link--accent
-                        nav__link-mobile-menu
-                        nav__link-mobile-menu--accent
-                        link
-                      "
-                      href="#contacts"
-                      >contacts</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div
-                class="
-                  btn-container btn-container-consultation btn-container-consultation-mobile-menu
-                "
-              >
-                <button
-                  type="button"
-                  class="btn btn-consultation btn-consultation-mobile-menu"
-                  data-modal-open
-                >
-                  consultation by phone
-                </button>
-              </div>
-            </div>
-          </div>
-        </nav>
+        </div>
       </div>
-    </header>
+    </nav>
+  </div>
+</header>
