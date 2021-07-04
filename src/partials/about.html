@@ -2,7 +2,39 @@
   <div class="container">
     <h2 class="about__heading">Teacher</h2>
     <div class="about__box-img">
-      <img src="./images/about/about-elena-moreva-mobile-tablet.jpg" alt="Elena Moreva" />
+      <picture class="picture">
+        <source
+          srcset="
+            ./images/about/about-elena-moreva-desktop.webp    1x,
+            ./images/about/about-elena-moreva-desktop@2x.webp 2x
+          "
+          media="(min-width: 1366px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/about/about-elena-moreva-desktop.jpg    1x,
+            ./images/about/about-elena-moreva-desktop@2x.jpg 2x
+          "
+          media="(min-width: 1366px)"
+        />
+        <source
+          srcset="
+            ./images/about/about-elena-moreva-mobile-tablet.webp    1x,
+            ./images/about/about-elena-moreva-mobile-tablet@2x.webp 2x
+          "
+          media="(max-width: 1365px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/about/about-elena-moreva-mobile-tablet.jpg    1x,
+            ./images/about/about-elena-moreva-mobile-tablet@2x.jpg 2x
+          "
+          media="(max-width: 1365px)"
+        />
+        <img src="#" alt="Elena Moreva" />
+      </picture>
     </div>
     <div class="about__box-info">
       <h3 class="about__sub-heading">Elena Moreva</h3>
@@ -12,7 +44,7 @@
           <p>6 yeards of experience in preparing students for UPE</p>
         </li>
         <li class="about__merit-item">
-          <p>Own result<br />of passing VNO - 197 points 2 years in a row</p>
+          <p>Own result of passing VNO - 197 points 2 years in a row</p>
         </li>
         <li class="about__merit-item">
           <p>
