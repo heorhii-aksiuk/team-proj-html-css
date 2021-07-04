@@ -6,7 +6,8 @@
 
   &__container {
     background-color: $main-color;
-    max-width: 280px;
+    max-width: 320px;
+    width: 100%;
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -26,6 +27,7 @@
   }
 
   &__wrapper {
+    position: relative;
     padding-left: 26.42%;
   }
 
@@ -109,14 +111,15 @@
   position: absolute;
   z-index: 1;
 
-  right: 0;
-  bottom: 440px;
+  right: -20px;
+  bottom: -97px;
 
   display: block;
   width: 120px;
   height: 137px;
   background-image: url(../images/program/lesson-mobile.png);
   opacity: 0.5;
+  background-size: 120px 137px;
 }
 // 2x screens, image
 @media screen and (min-device-pixel-ratio: 2),
@@ -135,7 +138,7 @@
     padding-bottom: 392px;
 
     &__container {
-      max-width: 768px;
+      min-width: 768px;
       padding-left: 40px;
       padding-right: 40px;
     }
@@ -189,11 +192,13 @@
   // псевдоэлемент картинка для планшета
 
   .program__wrapper::after {
-    bottom: 253px;
+    bottom: -139px;
+    right: -40px;
 
     width: 384px;
     height: 280px;
     background-image: url(../images/program/lesson-tablet.png);
+    background-size: 384px 280px;
   }
 
   // 2x screens, image for tablet
@@ -214,7 +219,7 @@
     padding-bottom: 363px;
 
     &__container {
-      max-width: 1360px;
+      min-width: 1360px;
       margin: 0 auto;
       padding-left: 20px;
       padding-right: 20px;
@@ -287,7 +292,13 @@
   // псевдоэлемент полоса для десктопа
 
   .program__list::before {
-    top: 278px;
+    display: none;
+  }
+  .program__container::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 277px;
     left: 0;
 
     height: 0;
@@ -301,12 +312,15 @@
 
   .program__wrapper::after {
     right: unset;
-    left: 0;
-    bottom: 0;
+    left: -183px;
+    bottom: -363px;
 
-    width: 663px;
+    min-width: 663px;
     height: 502px;
     background-image: url(../images/program/lesson-desktop.png);
+    background-size: 663px 502px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
 
   // 2x screens, image for tablet
