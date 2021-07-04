@@ -1,0 +1,38 @@
+.header__container {
+  display: flex;
+  background-color: $white-color;
+}
+.logo {
+  top: 30px;
+  left: 20px;
+}
+.nav {
+  display: none;
+}
+.btn {
+  display: none;
+}
+.header-mobile-menu-btn {
+  background-color: transparent;
+  border: transparent;
+  right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    top: 41px;
+    left: 40px;
+  }
+  .btn {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .logo {
+    top: 42px;
+    left: 185px;
+  }
+  .nav {
+    display: flex;
+  }
+}
