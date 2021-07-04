@@ -1,0 +1,63 @@
+.guarantee {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  &__container {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    margin-bottom: 30px;
+
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.3;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+
+  &__wrapper {
+    padding-top: 30px;
+    padding-bottom: 31px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    background-color: $we-guarantee-bg-color;
+  }
+
+  &__list {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.67;
+    color: $we-guarantee-color;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 28px;
+  }
+
+  &__item:not(:last-child) {
+    min-height: 98px;
+    padding-bottom: 23px;
+    border-left: 1px dashed $grey-color;
+  }
+
+  &__item::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    width: 15px;
+    height: 30px;
+    background-image: url(../images/icons/fire-icon.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: 15px 20px;
+    background-color: #f1f1f1;
+  }
+
+  &__accent {
+    color: $accent-color;
+  }
+}
