@@ -5,6 +5,7 @@
   padding-bottom: 537px;
 
   &__container {
+    background-color: $main-color;
     max-width: 280px;
     margin: 0 auto;
     padding-left: 20px;
@@ -30,6 +31,7 @@
 
   &__list {
     position: relative;
+    z-index: 3;
     padding-left: 26px;
   }
 
@@ -105,6 +107,7 @@
 .program__wrapper::after {
   content: '';
   position: absolute;
+  z-index: 1;
 
   right: 0;
   bottom: 440px;
@@ -245,6 +248,7 @@
   }
 
   .semester {
+    z-index: 2;
     font-size: 20px;
     line-height: 1.4;
 
