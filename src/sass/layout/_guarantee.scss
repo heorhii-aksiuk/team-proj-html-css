@@ -34,13 +34,23 @@
   }
 
   &__item {
-    min-height: 75px;
+    position: relative;
     padding-left: 28px;
   }
 
   &__item:not(:last-child) {
-    margin-bottom: 23px;
+    min-height: 98px;
+    padding-bottom: 23px;
     border-left: 1px dashed $grey-color;
+  }
+
+  &__item::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    width: 15px;
+    height: 20px;
+    background-image: url(../images/icons/fire-icon.svg);
   }
 
   &__accent {
