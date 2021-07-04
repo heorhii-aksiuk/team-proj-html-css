@@ -49,8 +49,12 @@
     position: absolute;
     left: -8px;
     width: 15px;
-    height: 20px;
+    height: 30px;
     background-image: url(../images/icons/fire-icon.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: 15px 20px;
+    background-color: #f1f1f1;
   }
 
   &__accent {
