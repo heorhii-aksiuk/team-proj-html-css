@@ -20,6 +20,8 @@
 
 .mobile-menu {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vw;
   overflow: auto;
@@ -40,6 +42,9 @@
   &__close-btn {
     position: absolute;
     background-color: transparent;
+    right: 20px;
+    top: 37px;
+    line-height: 0;
     border: none;
     cursor: pointer;
   }
@@ -56,10 +61,35 @@
   &__link--accent:focus {
     color: $accent-color;
   }
+  &__list {
+    margin: 50px auto 50px auto;
+    margin-left: 20px;
+    color: $white-color;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+  }
 }
 
 .logo__img-mob-menu {
   margin-top: 30px;
+  margin-left: 20px;
+}
+.btn-consultation-mobile-menu {
+  width: 260px;
+  height: 48px;
+  margin: 0 auto;
+  color: $white-color;
+  background-color: transparent;
+  border: 1px solid $accent-color;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.21;
+  letter-spacing: 0.08em;
 }
 
 @media screen and (min-width: 768px) {
