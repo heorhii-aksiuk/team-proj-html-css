@@ -1,0 +1,57 @@
+// счетчик  CSS
+//  .benefits__list {
+//   counter-reset: section;
+// }
+// li::before {
+//   counter-increment: section;
+// }
+
+.benefits {
+  background-color: transparent;
+  transform: translateY(-487px);
+  height: 0;
+
+  &__container {
+    max-width: 320px;
+    width: 100vw;
+    margin: 0 auto;
+
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    max-width: 180px;
+    color: $white-color;
+  }
+
+  &__wrapper {
+    padding: 20px 14px 20px 30px;
+    background-color: $white-color;
+
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  }
+
+  &__item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.64;
+    letter-spacing: $ls-main-text;
+
+    color: $accent-color;
+
+    &:not(:last-child) {
+      margin-bottom: 36px;
+    }
+  }
+
+  &__text {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.42;
+
+    color: $main-color;
+  }
+}

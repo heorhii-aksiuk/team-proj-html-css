@@ -33,7 +33,7 @@
 
   &__list {
     position: relative;
-    z-index: 3;
+    z-index: 1;
     padding-left: 26px;
   }
 
@@ -109,7 +109,7 @@
 .program__wrapper::after {
   content: '';
   position: absolute;
-  z-index: 1;
+  z-index: 0;
 
   right: -20px;
   bottom: -97px;
@@ -162,6 +162,7 @@
       margin-bottom: 30px;
     }
   }
+
   @media screen and (max-width: 1365px) {
     .semester__list {
       display: flex;
