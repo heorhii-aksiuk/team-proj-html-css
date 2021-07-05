@@ -55,3 +55,55 @@
     color: $main-color;
   }
 }
+
+// TABLET STYLES
+
+@media screen and (min-width: 768px) {
+  .benefits {
+    transform: translateY(-203px);
+
+    &__container {
+      max-width: 768px;
+
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    &__title {
+      max-width: unset;
+      text-align: center;
+    }
+
+    &__wrapper {
+      padding: 35px 118px 40px 98px;
+      height: 394px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      height: 100%;
+      justify-content: space-between;
+      align-content: space-between;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: unset;
+      }
+      @media screen and (max-width: 1365px) {
+        &:nth-child(2n + 1) {
+          width: 236px;
+          margin-right: 20px;
+        }
+        &:nth-child(2n) {
+          width: 216px;
+        }
+      }
+    }
+
+    &__text {
+      margin-top: 18px;
+    }
+  }
+}
