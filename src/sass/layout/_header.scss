@@ -1,9 +1,7 @@
 .header__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding-top: 30px;
+  margin: 30px 20px 0 20px;
 }
 .nav__container {
   display: none;
@@ -15,7 +13,7 @@
 .mobile-menu-btn {
   background-color: transparent;
   border: transparent;
-  right: 20px;
+  padding: 0;
 }
 
 .mobile-menu {
@@ -93,18 +91,26 @@
 }
 
 @media screen and (min-width: 768px) {
+  .header__container {
+    margin: 40px 40px 0 40px;
+  }
   .btn {
     display: block;
+  }
+  .btn-consultation {
+    margin-left: 10px;
   }
 }
 @media screen and (min-width: 1366px) {
   .header__container {
+    margin: 33px 191px 0 181px;
   }
   .logo__img {
     margin-right: 144px;
   }
   .nav__container {
     display: inline-flex;
+    height: 17px;
   }
   .nav__list {
     display: flex;
@@ -123,5 +129,6 @@
   }
   .btn-consultation {
     margin-left: 60px;
+    height: 70px;
   }
 }
