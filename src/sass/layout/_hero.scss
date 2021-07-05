@@ -1,3 +1,7 @@
+.hero-section {
+  // background-color: $advantages-bg-color;
+  // background-image: url('../images/hero/wave-desktop.png');
+}
 .hero__container {
   display: flex;
   flex-direction: column;
@@ -5,31 +9,57 @@
   justify-content: center;
   padding-top: 52px;
 }
+.hero__left-container {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 0.08em;
+}
+
 .hero__description-text-top {
   margin-top: 8px;
+  color: $grey-color;
 }
 .hero__description-text-bottom {
   margin-top: 8px;
+  font-weight: 700;
+}
+.hero__quantity-points {
+  display: block;
+  margin-top: 8px;
+  color: $accent-color;
 }
 .btn-container-free-lesson {
   margin-top: 52px;
 }
 .btn-free-lesson {
   display: block;
+  min-width: 260px;
   margin: 52px auto 55px auto;
-}
-.hero__right-container {
-  background-image: url(../images/hero/wave-desktop.png);
 }
 
 @media screen and (min-width: 768px) {
   .hero__container {
     padding-top: 88px;
+    flex-direction: row;
+  }
+  .btn-free-lesson {
+    margin-left: 0;
   }
 }
 
 @media screen and (min-width: 1366px) {
   .hero__container {
     padding-top: 100px;
+  }
+  .hero__left-container {
+    width: 642px;
+  }
+  .section__heading {
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
   }
 }
