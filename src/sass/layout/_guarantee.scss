@@ -3,7 +3,7 @@
   padding-bottom: 25px;
 
   &__container {
-    max-width: 320px;
+    max-width: 480px;
     margin: 0 auto;
   }
 
@@ -19,7 +19,7 @@
 
   &__wrapper {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 51px;
     padding-left: 27px;
     padding-right: 20px;
 
@@ -86,6 +86,52 @@
     &__item:not(:last-child) {
       min-height: 58px;
       padding-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .guarantee {
+    padding-top: 65px;
+    padding-bottom: 65px;
+
+    &__container {
+      min-width: 1366px;
+    }
+
+    &__heading {
+      margin-bottom: 50px;
+      font-size: 46px;
+    }
+
+    &__wrapper {
+      width: 1314px;
+      padding-top: 50px;
+      padding-bottom: 45px;
+      padding-left: 123px;
+      padding-right: 112px;
+    }
+
+    &__list {
+      font-size: 20px;
+      line-height: 1.4;
+    }
+
+    &__item {
+      padding-left: 41px;
+    }
+
+    &__item:not(:last-child) {
+      min-height: 80px;
+      padding-bottom: 20px;
+    }
+
+    &__item::before {
+      left: -10px;
+      width: 22px;
+      height: 40px;
+
+      background-size: 22px 30px;
     }
   }
 }
