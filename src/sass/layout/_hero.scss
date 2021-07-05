@@ -1,0 +1,35 @@
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 52px;
+}
+.hero__description-text-top {
+  margin-top: 8px;
+}
+.hero__description-text-bottom {
+  margin-top: 8px;
+}
+.btn-container-free-lesson {
+  margin-top: 52px;
+}
+.btn-free-lesson {
+  display: block;
+  margin: 52px auto 55px auto;
+}
+.hero__right-container {
+  background-image: url(../images/hero/wave-desktop.png);
+}
+
+@media screen and (min-width: 768px) {
+  .hero__container {
+    padding-top: 88px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .hero__container {
+    padding-top: 100px;
+  }
+}

@@ -1,23 +1,25 @@
 .header__container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 30px;
 }
-.nav {
+.nav__container {
   display: none;
 }
 .btn {
   display: none;
+  text-transform: uppercase;
 }
-.header-mobile-menu-btn {
+.mobile-menu-btn {
   background-color: transparent;
   border: transparent;
+  right: 20px;
 }
 
 .mobile-menu {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100vw;
   height: 100vw;
   overflow: auto;
@@ -31,7 +33,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vw;
+    width: 100vw;
     margin: 0;
   }
 
@@ -39,19 +41,7 @@
     position: absolute;
     background-color: transparent;
     border: none;
-    top: 30px;
-    right: 30px;
-    padding: 5px;
-    font-size: 0;
     cursor: pointer;
-    transition: fill var(--transition-duration) var(--transition-timing-function);
-    &--accent:hover {
-      fill: var(--color-logo-btn-accent);
-    }
-  }
-  .logo__img-mob-menu {
-    margin-left: 20px;
-    margin-top: 30px;
   }
 
   &.is-open {
@@ -59,23 +49,49 @@
     visibility: visible;
     pointer-events: auto;
   }
+
+  &__link {
+    color: $white-color;
+  }
+  &__link--accent:focus {
+    color: $accent-color;
+  }
+}
+
+.logo__img-mob-menu {
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 768px) {
-  .logo {
-    top: 41px;
-    left: 40px;
-  }
   .btn {
-    display: inline-block;
+    display: block;
   }
 }
 @media screen and (min-width: 1366px) {
-  .logo {
-    top: 42px;
-    left: 185px;
+  .header__container {
   }
-  .nav {
+  .logo__img {
+    margin-right: 144px;
+  }
+  .nav__container {
+    display: inline-flex;
+  }
+  .nav__list {
     display: flex;
+    width: 648px;
+    justify-content: space-between;
+  }
+  .nav__link {
+    color: $grey-color;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+  .mobile-menu-btn {
+    display: none;
+  }
+  .btn-consultation {
+    margin-left: 60px;
   }
 }
