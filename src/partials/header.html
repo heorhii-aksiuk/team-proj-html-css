@@ -30,7 +30,11 @@
             srcset="./images/logo/logo-mob.png 1x, ./images/logo/logo-mob2x.png 2x"
             media="(max-width: 479px)"
           />
-          <img class="logo__img" src="#" alt="Logo Hellen include fire icon" />
+          <img
+            class="logo__img"
+            src="./images/logo/logo-mob.png"
+            alt="Logo Hellen include fire icon"
+          />
         </picture>
       </a>
     </div>
@@ -61,49 +65,18 @@
         consultation by phone
       </button>
     </div>
+
     <button type="button" class="header-mobile-menu-btn" data-menu-button>
-      <svg class="header__mobile-menu-icon">
+      <svg class="header__mobile-menu-icon" width="20px" height="14px">
         <use href="./images/icons/sprite.svg#burger-icon"></use>
       </svg>
     </button>
 
-    <div class="mobile-menu" data-menu>
-      <div class="mobile-menu__container">
-        <button
-          type="button"
-          class="mobile-menu__close-btn mobile-menu__close-btn--accent"
-          data-menu-close
-        >
-          <svg class="mobile-menu__close-btn-svg" width="28" height="28">
-            <use href="./images/icons/sprite.svg#close-mobile-icon"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-
     <div class="mobile-menu mobile-menu-section" data-menu>
       <div class="mobile-menu__container">
-        <button
-          type="button"
-          class="mobile-menu__close-btn mobile-menu__close-btn--accent"
-          data-menu-close
-        >
-          <svg class="mobile-menu__close-btn-svg" width="15px" height="15px">
-            <use href=""></use>
-          </svg>
-        </button>
         <div class="logo-mobile-menu">
           <a class="logo__link link" href="./index.html">
             <picture>
-              <source
-                srcset="./images/logo/logo-desktop.webp 1x, ./images/logo/logo-desktop2x.webp 2x"
-                media="(min-width: 1366px)"
-                type="image/webp"
-              />
-              <source
-                srcset="./images/logo/logo-desktop.png 1x, ./images/logo/logo-desktop2x.png 2x"
-                media="(min-width: 1366px)"
-              />
               <source
                 srcset="
                   ./images/logo/logo-tablet-menu.webp   1x,
@@ -121,17 +94,32 @@
               />
               <source
                 srcset="./images/logo/logo-mob-menu.webp 1x, ./images/logo/logo-mob-menu2x.webp 2x"
-                media="(max-width: 479px)"
+                media="(max-width: 767px)"
                 type="image/webp"
               />
               <source
                 srcset="./images/logo/logo-mob-menu.png 1x, ./images/logo/logo-mob-menu2x.png 2x"
-                media="(max-width: 479px)"
+                media="(max-width: 767px)"
               />
-              <img class="logo__img-mob-menu" src="#" alt="Logo Hellen include fire icon" />
+              <img
+                class="logo__img-mob-menu"
+                src="./images/logo/logo-mob-menu.png"
+                alt="Logo Hellen include fire icon"
+              />
             </picture>
           </a>
         </div>
+
+        <button
+          type="button"
+          class="mobile-menu__close-btn mobile-menu__close-btn--accent"
+          data-menu-close
+        >
+          <svg class="mobile-menu__close-btn-svg" width="15px" height="15px">
+            <use href="./images/icons/sprite.svg#close-mobile-icon"></use>
+          </svg>
+        </button>
+
         <div class="nav__list-mobile-menu-container">
           <ul class="nav__list nav__list-mobile-menu list">
             <li class="nav__item nav__item-mobile-menu">
@@ -177,6 +165,7 @@
             </li>
           </ul>
         </div>
+
         <div
           class="btn-container btn-container-consultation btn-container-consultation-mobile-menu"
         >
