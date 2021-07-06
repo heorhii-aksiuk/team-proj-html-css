@@ -117,16 +117,18 @@
 
 @media screen and (min-width: 1366px) {
   .benefits {
-    transform: translateY(-260px);
+    transform: translateY(-200px);
 
     &__container {
-      min-width: 1354px;
-      padding-left: 20px;
-      padding-right: 20px;
+      min-width: 1366px;
+      padding-left: 26px;
+      padding-right: 26px;
     }
 
     &__title {
+      margin-bottom: 0;
       visibility: hidden;
+      height: 1px;
     }
 
     &__wrapper {
