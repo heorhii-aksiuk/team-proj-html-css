@@ -10,11 +10,13 @@
   font-size: 12px;
   line-height: 1.21;
   letter-spacing: 0.08em;
+  cursor: pointer;
 }
 .btn-consultation {
   color: $accent-color;
   background-color: transparent;
   padding: 0;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
