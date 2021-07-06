@@ -1,12 +1,17 @@
-// счетчик  CSS
-//  .benefits__list {
-//   counter-reset: section;
-// }
-// li::before {
-//   counter-increment: section;
-// }
+// counter  CSS
+.benefits__list {
+  counter-reset: number 0;
+}
+.benefits__item {
+  counter-increment: number;
+}
+.benefits__item::before {
+  content: '— 0' counter(number);
+}
+// end counter  CSS
 
 .benefits {
+  position: relative;
   background-color: transparent;
   transform: translateY(-487px);
   height: 0;
