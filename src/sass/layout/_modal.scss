@@ -1,0 +1,220 @@
+.modal-form {
+  margin: 0 auto;
+
+  &__field-container {
+    position: relative;
+    padding-left: 38px;
+    padding-right: 40px;
+    justify-content: center;
+  }
+  &__title {
+    text-align: center;
+    margin: 40px 40px 30px 40px;
+    color: $white-color;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+  &__label {
+    position: absolute;
+    top: -18px;
+    left: 40px;
+    color: $white-color;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+  }
+  &__input {
+    padding: 0;
+    width: 100%;
+    height: 38px;
+    margin-bottom: 28px;
+    outline: transparent;
+    border: 1px solid $accent-color;
+    border-radius: 4px;
+    cursor: pointer;
+    &:focus {
+      border: 1px solid $accent-color;
+    }
+  }
+}
+.modal-form-checkbox {
+  color: $accent-color;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.modal-form-comment {
+  padding: 12px 16px;
+  height: 94px;
+  width: 100%;
+  resize: none;
+  margin-bottom: 20px;
+  border: 1px solid $accent-color;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  outline: transparent;
+  &::placeholder {
+    color: $white-color;
+  }
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-form {
+    &__label {
+      left: 40px;
+    }
+    &__field-container {
+      padding-right: 48px;
+    }
+    &__input {
+      width: 360px;
+    }
+  }
+  .modal-form-comment {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .modal-form {
+    &__input {
+      padding: 0;
+      width: 446px;
+    }
+    &__label {
+      left: 40px;
+    }
+    &__field-container {
+      padding-left: 38px;
+      padding-right: 40px;
+    }
+  }
+  .modal-form-comment {
+    width: 100%;
+  }
+}
+// MODAL WINDOW //
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 100%;
+  border: 2px solid $accent-color;
+  background-color: rgba(33, 33, 33, 0.7);
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.modal-close-btn {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  &--accent:focus,
+  &--accent:hover {
+    fill: $accent-color;
+  }
+}
+
+.modal-form__label-policy {
+  color: $white-color;
+  display: inline-block;
+  font-size: 14px;
+  &::before {
+    display: inline-block;
+    content: '';
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    vertical-align: middle;
+    border: 2px solid $accent-color;
+    border-radius: 4px;
+
+    &__input-policy:checked + &::before {
+      background-image: url(../images/icons/close-mobile-icon.svg);
+      fill: green;
+    }
+
+    &__input-policy:focus + &::before {
+      border: 2px solid $accent-color;
+      border-radius: 4px;
+    }
+  }
+}
+
+.policy-contract {
+  display: block;
+  color: $white-color;
+  text-align: center;
+}
+
+.modal-form-btn {
+  display: block;
+  min-width: 200px;
+  min-height: 50px;
+  border-radius: 4px;
+  border: solid 2px $accent-color;
+  margin: 30px auto 40px auto;
+  color: $white-color;
+  background-color: rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+  &--accent:hover,
+  &--accent:focus {
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 440px;
+  }
+  .modal-form__label-policy {
+    display: block;
+    padding-left: 0;
+    text-align: center;
+
+    &::before {
+      display: inline-block;
+      content: '';
+      width: 10px;
+      height: 10px;
+      margin-right: 4px;
+      margin-bottom: 3px;
+      border-radius: 2px;
+    }
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .modal {
+    width: 528px;
+  }
+  .modal-form__label-policy {
+    padding-left: 0;
+    margin: 0 auto;
+  }
+}
