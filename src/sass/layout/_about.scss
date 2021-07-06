@@ -1,6 +1,12 @@
 .about {
-  padding-top: 19px;
+  padding-top: 270px;
   padding-bottom: 25px;
+
+  &__container {
+    max-width: 480px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
   &__heading {
     margin-bottom: 20px;
     font-size: 20px;
@@ -77,6 +83,10 @@
 
 @media screen and (min-width: 768px) {
   .about {
+    padding-top: 302px;
+    &__container {
+      max-width: 688px;
+    }
     &__heading {
       margin-bottom: 30px;
       font-size: 26px;
@@ -113,7 +123,11 @@
 }
 @media screen and (min-width: 1366px) {
   .about {
-    width: 1317px;
+    padding-top: 329px;
+
+    &__container {
+      max-width: 1317px;
+    }
     &__heading {
       font-weight: 800;
       margin-bottom: 50px;
