@@ -1,9 +1,8 @@
 .header__container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  margin: 0 auto;
-  padding-top: 30px;
+  align-items: center;
+  margin: 30px 20px 0 20px;
 }
 .nav__container {
   display: none;
@@ -15,7 +14,7 @@
 .mobile-menu-btn {
   background-color: transparent;
   border: transparent;
-  right: 20px;
+  padding: 0;
 }
 
 .mobile-menu {
@@ -93,22 +92,47 @@
 }
 
 @media screen and (min-width: 768px) {
+  .header__container {
+    margin: 40px 40px 0 40px;
+  }
   .btn {
     display: block;
+  }
+  .btn-consultation-mobile-menu {
+    display: none;
+  }
+  .mobile-menu__close-btn {
+    right: 40px;
+    top: 50px;
+  }
+  .mobile-menu__list-container {
+    margin: 0 auto;
+    margin-top: 22px;
+  }
+  .mobile-menu__list {
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.76;
+    letter-spacing: 0.03em;
+  }
+  .logo__img-mob-menu {
+    margin-top: 42px;
+    margin-left: 43px;
   }
 }
 @media screen and (min-width: 1366px) {
   .header__container {
+    margin: 33px 191px 0px 181px;
   }
   .logo__img {
     margin-right: 144px;
   }
   .nav__container {
-    display: inline-flex;
+    display: flex;
   }
   .nav__list {
-    display: flex;
-    width: 648px;
+    display: inline-flex;
+    width: 548px;
     justify-content: space-between;
   }
   .nav__link {
@@ -123,5 +147,6 @@
   }
   .btn-consultation {
     margin-left: 60px;
+    height: 70px;
   }
 }
