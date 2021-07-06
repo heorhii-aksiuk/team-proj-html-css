@@ -1,3 +1,4 @@
+//======================CONTACTS===================//
 .contacts {
   width: auto;
 
@@ -64,6 +65,21 @@
   }
 }
 
+.prompt-phone {
+  position: relative;
+}
+.prompt-phone:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  background: $white-color;
+  font-size: 11px;
+  padding: 5px 10px;
+  border: 1px solid #333;
+}
+
 .overlay {
   background-color: $main-color;
   background-image: linear-gradient(to right, rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)),
@@ -79,7 +95,11 @@
 .input-usernam {
   margin-bottom: 20px;
 }
-
+@media screen and (min-width: 480px) {
+  .prompt-phone:hover::after {
+    left: 80px;
+  }
+}
 @media (min-device-pixel-ratio: 2) and (max-width: 767px),
   (min-resolution: 192dpi) and (max-width: 767px),
   (min-resolution: 2dppx) and (max-width: 767px) {
@@ -158,6 +178,10 @@
   .input-phone {
     margin-bottom: 31px;
   }
+
+  .prompt-phone:hover::after {
+    left: 150px;
+  }
 }
 
 @media (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -220,6 +244,10 @@
   .input-phone {
     margin-bottom: 80px;
   }
+
+  .prompt-phone:hover::after {
+    left: 275px;
+  }
 }
 
 @media (min-device-pixel-ratio: 2) and (min-width: 1366px),
@@ -230,3 +258,5 @@
       url('../images/contacts/bg-contacts-desktop@2x.jpg');
   }
 }
+
+//======================CONTACTS END======================//
