@@ -116,7 +116,10 @@
   .footer {
     &__contact {
       display: flex;
-      padding-left: 183px;
+      width: 1366px;
+      margin: 0 auto;
+      padding-left: 26px;
+      padding-right: 26px;
       padding-top: 52px;
       padding-bottom: 53px;
     }
@@ -136,9 +139,10 @@
     }
 
     &__literary-property {
-      width: 1497px;
+      width: 1366px;
       margin: 0 auto;
-      padding-left: 183px;
+      padding-left: 26px;
+      padding-right: 26px;
     }
   }
 
