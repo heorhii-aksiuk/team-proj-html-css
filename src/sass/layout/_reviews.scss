@@ -144,10 +144,10 @@
 .slider-for {
   display: block;
   position: relative;
-  display: flex;
   justify-content: space-between;
 
   @media screen and (min-width: 768px) {
+    display: flex;
     padding: 40px;
     width: 688px;
     min-height: 313px;
@@ -182,9 +182,11 @@
     width: 1090px;
     &::after {
       right: -85px;
+      top: 185px;
     }
     &::before {
       left: -85px;
+      top: 185px;
     }
   }
 }
@@ -207,9 +209,9 @@
 
 .slider-nav {
   margin: 62px auto 0;
-  width: 280px;
+  max-width: 280px;
   @media screen and (min-width: 768px) {
-    width: 558px;
+    max-width: 558px;
     margin: 30px auto 0;
   }
   @media screen and (min-width: 768px) {
