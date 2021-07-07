@@ -14,6 +14,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            max-width: 1314px;
         }
     }
 
@@ -23,16 +24,16 @@
         margin: 0 auto;
 
         @media screen and (min-width: 768px) {
-            min-width: 768px;
+            max-width: 768px;
             padding-left: 40px;
             padding-right: 40px;
             margin: 0 auto;
         }
 
         @media screen and (min-width: 1366px) {
-            min-width: 1366px;
-            padding-left: 183px;
-            padding-right: 183px;
+            max-width: 1366px;
+            padding-left: 26px;
+            padding-right: 26px;
             margin: 0 auto;
         }
     }
@@ -66,6 +67,7 @@
         letter-spacing: 0.08em;
         text-align: center;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+        position: relative;
 
         @media screen and (min-width: 1366px) {
             font-size: 20px;
@@ -80,6 +82,12 @@
             margin: 20px auto;
             transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             
+            @media screen and (min-width: 768px) {
+                position: absolute;
+                top: 60px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
     }
 
@@ -92,13 +100,20 @@
         color: $grey-color;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+        @media screen and (min-width: 768px) {
+            margin-top: 70px;
+        }
+
         @media screen and (min-width: 1366px) {
             font-size: 18px;
             line-height: 1.55;
+            margin-top: 50px;
         }
     }
 
     &__list-item {
+        max-width: 1314px;
+        width: 280px;
         min-height: 280px;
         background-color: $white-color;
         box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
@@ -125,9 +140,15 @@
             }
         }
 
-        @media screen and (mix-width: 767px) {
+        @media screen and (min-width: 767px) {
             width: 334px;
             height: 334px;
+        }
+
+        @media screen and (min-width: 1366px) {
+            width: 425px;
+            height: 396px;
+            
         }
 
         @media screen and (max-width: 767px) {
@@ -180,3 +201,23 @@
     
 }
 
+.second-branch {
+    @media screen and (min-width: 768px) {
+        height: 334px;
+    }
+
+    @media screen and (min-width: 1366px) {
+        height: 396px;
+    }
+}
+
+.second-description {
+    @media screen and (min-width: 768px) {
+        margin-top: 100px;
+    }
+
+    @media screen and (min-width: 1366px) {
+        margin-top: 50px;
+    }
+    
+}

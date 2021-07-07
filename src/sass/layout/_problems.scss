@@ -1,4 +1,5 @@
 .section-problems-background {
+    position: relative;
     background-image: linear-gradient(to bottom, $main-color 75%, $white-color 50%);
 
     @media screen and (min-width: 768px) {
@@ -35,12 +36,14 @@
         @media screen and (min-width: 768px) {
             padding-left: 40px;
             padding-right: 40px;
+            max-width: 768px;
             margin: 0 auto;
         }
 
         @media screen and (min-width: 1366px) {
-            padding-right: 183px;
-            padding-left: 183px;
+            padding-right: 26px;
+            padding-left: 26px;
+            max-width: 1366px;
             margin: 0 auto;
         }
     }
@@ -80,16 +83,18 @@
 
         @media screen and (min-width: 768px) {
             padding-top: 26px;
-            //padding-right: 47px;
+            padding-right: 47px;
             padding-bottom: 30px;
             padding-left: 96px;
+            min-width: 688px;
         }
 
         @media screen and (min-width: 1366px) {
             padding-top: 70px;
-            padding-right: 82px;
-            padding-bottom: 70px;
-            padding-left: 84px;    
+            padding-right: 112px;
+            padding-bottom: 62px;
+            padding-left: 114px;
+            max-width: 1314px;    
         }
     }
 
@@ -125,6 +130,7 @@
             line-height: 1.2;
             width: 336px;
             margin-bottom: 32px;
+            
         }
     }
 
