@@ -1,1 +1,240 @@
 // ..через несколько мгновений произойдет волшебство..
+
+.reviews {
+  @media screen and (min-width: 320px) {
+    // width: 100%;
+    // max-width: 320px;
+    // height: auto;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 25px 0 50px;
+  }
+  @media screen and (min-width: 1366px) {
+    // max-width: 1366px;
+  }
+}
+.reviews-container {
+  padding: 0 15px;
+  margin: 0 auto;
+  @media screen and (min-width: 320px) {
+    width: 100%;
+    max-width: 320px;
+    padding: 0 20px;
+    height: auto;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding: 0 27.5px;
+  }
+  @media screen and (min-width: 1366px) {
+    max-width: 1366px;
+  }
+}
+.head-reviews {
+  margin-bottom: 30px;
+  text-align: center;
+  //   color: $grey-color;
+}
+.slider-dscr__current-name {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: #ff6b09;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-top: 24px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+    text-align: start;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+.slider-dscr__current-info {
+  max-width: 240px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 706px;
+    text-align: start;
+  }
+}
+.slider-dscr__shortinfo {
+  width: 240px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.08em;
+
+  color: #b9b9b9;
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    width: 412px;
+    text-align: start;
+    margin-bottom: 20px;
+  }
+}
+.slider-dscr__story {
+  display: inline-block;
+}
+.slider-dsrc__storytext {
+  // max-width: 240px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+
+  text-align: center;
+
+  color: #3d3d3d;
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+}
+.slider-dscr__story_fulltextlink {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+
+  text-align: center;
+  text-decoration-line: underline;
+
+  color: #ff6b09;
+}
+
+.slider-for {
+  display: block;
+  position: relative;
+  @media screen and (min-width: 768px) {
+    padding: 40px;
+    width: 688px;
+    min-height: 313px;
+    // background-color: $white-color;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    &::after {
+      position: absolute;
+      margin-left: 24px;
+
+      top: 149px;
+      right: -13px;
+      content: '';
+      width: 25px;
+      height: 16px;
+      background-image: url(../images/reviews/Arrow.svg);
+      transform: rotateY(180deg);
+    }
+    &::before {
+      position: absolute;
+      margin-right: 24px;
+      top: 149px;
+      left: -13px;
+      content: '';
+      width: 25px;
+      height: 16px;
+      background-image: url(../images/reviews/Arrow.svg);
+    }
+    display: flex;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1366px) {
+  }
+}
+.slider-pic {
+  display: flex;
+  justify-content: center;
+  //   align-items: center;
+}
+.slider-pic__photo {
+  //   display: block;
+  &::after {
+    display: flex;
+    margin: 24px auto 0;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/reviews/vk.svg);
+  }
+}
+.slider-dscr__name {
+  width: 412px;
+}
+
+.slider-nav {
+  margin: 62px 0 50px;
+  width: 280px;
+  @media screen and (min-width: 768px) {
+    width: 558px;
+    margin: 30px auto 0;
+  }
+}
+
+.slider-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    &::after {
+      margin-left: 24px;
+      content: '';
+      width: 27px;
+      height: 15px;
+      background-image: url(../images/reviews/Arrow.svg);
+      transform: rotateY(180deg);
+    }
+    &::before {
+      margin-right: 24px;
+      content: '';
+      width: 25px;
+      height: 15px;
+      background-image: url(../images/reviews/Arrow.svg);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    align-items: center;
+  }
+}
+.slider-nav__item {
+  border-radius: 50%;
+  @media screen and (max-width: 767px) {
+    &:not(:last-of-type) {
+      margin-right: 10px;
+    }
+    &:nth-last-of-type(-n + 4) {
+      display: none;
+    }
+    &:nth-of-type(3) {
+      margin-right: 0;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &:not(:last-of-type) {
+      margin-right: 30px;
+    }
+  }
+}
+.list {
+  margin: 0;
+}
+// }.slider-nav__item_not-mobile {
+//     display: none;
+// }
+
+// .slider-nav__item.current {
+//   position: relative;
+//   border-radius: 50%;
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     top: 0px;
+//     right: 0px;
+//     left: 0px;
+//     bottom: 0px;
+//     border-radius: 50%;
+//     border: solid 2px $accent-color;
+//   }
+// }
