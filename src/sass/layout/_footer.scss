@@ -11,8 +11,10 @@
   &__tel-icon {
     margin-right: 10px;
     fill: $accent-color;
+
     width: 20px;
-    height: 20px;
+    height: 19px;
+    line-height: 0;
   }
 
   &__copyright {
@@ -31,8 +33,11 @@
 
 @media screen and (max-width: 767px) {
   .footer {
-    &__container {
-      padding-top: 30px;
+    padding-top: 30px;
+
+    &__contact {
+      max-width: 199px;
+      margin: 0 auto;
     }
 
     &__logo {
@@ -80,6 +85,8 @@
     }
 
     &__literary-property {
+      width: 689px;
+      margin: 0 auto;
       padding-left: 40px;
       padding-top: 22px;
     }
@@ -96,12 +103,14 @@
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1365px) {
+@media screen and (min-width: 768px) and (max-width: 1365px) {
   .footer__contact {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 40px;
+    width: 689px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1366px) {
@@ -128,6 +137,8 @@
     }
 
     &__literary-property {
+      width: 1497px;
+      margin: 0 auto;
       padding-left: 183px;
     }
   }
