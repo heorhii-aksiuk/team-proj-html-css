@@ -9,7 +9,7 @@
     color: $white-color;
   }
 
-  .contacts__form-head {
+  &__form-head {
     font-weight: 600;
     text-align: center;
     letter-spacing: $ls-main-text;
@@ -48,7 +48,7 @@
   }
 
   &__form-btn {
-    width: 260px;
+    max-width: 260px;
     height: 48px;
     font-size: 12px;
     line-height: 1.25;
@@ -58,6 +58,7 @@
     margin-left: auto;
     margin-right: auto;
     background: $accent-color;
+    border: inherit;
     color: $white-color;
     text-align: center;
     text-transform: uppercase;
@@ -113,6 +114,11 @@
   .contacts {
     padding: 56px 20px 55px 20px;
 
+    &__container {
+      max-width: 280px;
+      margin: 0 auto;
+    }
+
     &__tittle {
       font-size: 14px;
       line-height: 1.29;
@@ -151,6 +157,11 @@
   .contacts {
     padding: 66px 40px 67px 40px;
 
+    &__container {
+      width: 688px;
+      margin: 0 auto;
+    }
+
     &__tittle {
       font-size: 26px;
       line-height: 1.42;
@@ -158,6 +169,8 @@
     }
 
     &__form-head {
+      width: 452px;
+      margin: 0 auto;
       font-size: 14px;
       line-height: 1.21;
     }
@@ -201,6 +214,11 @@
 
   .contacts {
     padding: 100px 170px 62px 170px;
+
+    &__container {
+      width: 1090px;
+      margin: 0 auto;
+    }
 
     &__tittle {
       font-size: 46px;
