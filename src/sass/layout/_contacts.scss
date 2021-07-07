@@ -69,6 +69,7 @@
 .prompt-phone {
   position: relative;
 }
+
 .prompt-phone:hover::after {
   content: attr(data-title);
   position: absolute;
@@ -96,11 +97,13 @@
 .input-usernam {
   margin-bottom: 20px;
 }
+
 @media screen and (min-width: 480px) {
   .prompt-phone:hover::after {
     left: 80px;
   }
 }
+
 @media (min-device-pixel-ratio: 2) and (max-width: 767px),
   (min-resolution: 192dpi) and (max-width: 767px),
   (min-resolution: 2dppx) and (max-width: 767px) {
@@ -213,7 +216,7 @@
   }
 
   .contacts {
-    padding: 100px 170px 62px 170px;
+    padding: 100px 138px 62px 138px;
 
     &__container {
       width: 1090px;
@@ -227,6 +230,8 @@
     }
 
     &__form-head {
+      width: 1090px;
+      margin: 0 auto;
       font-size: 30px;
       line-height: 1.23;
     }
@@ -247,7 +252,7 @@
       height: 70px;
       font-size: 14px;
       line-height: 1.21;
-      letter-spacing: ls-btn-desktop;
+      letter-spacing: $ls-btn-desktop;
     }
   }
 
