@@ -1,11 +1,16 @@
 .advantages {
   padding-top: 15px;
   padding-bottom: 44px;
+
   &__container {
+    width: 280px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  &__list {
     width: 216px;
     margin: 0 auto;
   }
-
   &__list li {
     margin-bottom: 19px;
   }
@@ -14,7 +19,6 @@
     padding-left: 69px;
     width: 214px;
   }
-
   &__list li:nth-child(1)::before {
     position: absolute;
     top: 0;
@@ -31,7 +35,6 @@
     padding-left: 75px;
     width: 216px;
   }
-
   &__list li:nth-child(2)::before {
     position: absolute;
     top: 0;
@@ -48,7 +51,6 @@
     padding-left: 77px;
     width: 215px;
   }
-
   &__list li:nth-child(3)::before {
     position: absolute;
     top: 0;
@@ -76,9 +78,10 @@
     padding-top: 50px;
     padding-bottom: 45px;
     &__container {
-      width: 688px;
+      width: 728px;
     }
     &__list {
+      width: unset;
       display: flex;
       flex-wrap: wrap;
       margin-top: -21px;
@@ -96,21 +99,17 @@
     padding-top: 88px;
     padding-bottom: 115px;
     &__container {
-      width: 1344px;
+      width: 100%;
+      padding-right: 275px;
+      padding-left: 183px;
     }
     &__list {
-      margin-top: unset;
-      margin-left: unset;
-    }
-    &__list li {
-      margin-top: unset;
-      margin-left: unset;
+      justify-content: space-between;
     }
     &__list li:nth-child(1) {
       padding-left: 82px;
-      width: 448px;
+      width: 250px;
     }
-
     &__list li:nth-child(1)::before {
       width: 100px;
       height: 102px;
@@ -118,7 +117,7 @@
     }
     &__list li:nth-child(2) {
       padding-left: 82px;
-      width: 448px;
+      width: 250px;
     }
 
     &__list li:nth-child(2)::before {
@@ -128,7 +127,7 @@
     }
     &__list li:nth-child(3) {
       padding-left: 82px;
-      width: 448px;
+      width: 250px;
     }
 
     &__list li:nth-child(3)::before {
