@@ -7,6 +7,10 @@
 .nav__container {
   display: none;
 }
+.nav__link:focus,
+.nav__link:hover {
+  color: $accent-color;
+}
 .btn {
   display: none;
   text-transform: uppercase;
