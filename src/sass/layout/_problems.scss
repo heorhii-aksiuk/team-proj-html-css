@@ -76,6 +76,8 @@
     }
 
     &__wrapper {
+        max-width: 440px;
+        margin: 0 auto;
         padding: 19px 25px 19px 30px;
         background-color: $white-color;
         box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
