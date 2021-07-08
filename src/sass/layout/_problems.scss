@@ -9,7 +9,7 @@
 
     @media screen and (min-width: 1366px) {
         background-image: url(../images/icons/fire-background.svg), linear-gradient(to bottom, $main-color 77%, $white-color 50%);
-        background-position: 100% 38%;
+        background-position: 100% 37%;
         background-repeat: no-repeat;
     }
 }
@@ -49,21 +49,25 @@
     }
 
     &__title {
+        max-width: 440px;
         display: block;
         font-weight: 800;
         font-size: 24px;
         line-height: 1.36;
         letter-spacing: 0.03em;
+        margin: 0 auto;
         margin-bottom: 25px;
         text-align: left;
 
         color: $white-color;
 
         @media screen and (min-width: 768px) {
+            max-width: 768px;
             margin-bottom: 25px;
         }
 
         @media screen and (min-width: 1366px) {
+            max-width: 1366px;
             font-weight: 800;
             font-size: 46px;
             line-height: 1.30;
@@ -76,6 +80,8 @@
     }
 
     &__wrapper {
+        max-width: 440px;
+        margin: 0 auto;
         padding: 19px 25px 19px 30px;
         background-color: $white-color;
         box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);

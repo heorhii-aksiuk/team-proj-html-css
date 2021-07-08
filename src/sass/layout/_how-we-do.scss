@@ -34,6 +34,7 @@
             max-width: 1366px;
             padding-left: 26px;
             padding-right: 26px;
+            padding-top: 80px;
             margin: 0 auto;
         }
     }
@@ -54,7 +55,6 @@
         @media screen and (min-width: 1366px) {
             text-align: left;
             font-size: 46px;
-            margin-top: 80px;
             margin-bottom: 50px;
         }
 
@@ -66,7 +66,7 @@
         line-height: 1.42;
         letter-spacing: 0.08em;
         text-align: center;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         position: relative;
 
         @media screen and (min-width: 1366px) {
@@ -112,9 +112,9 @@
     }
 
     &__list-item {
-        max-width: 1314px;
-        width: 280px;
+        max-width: 440px;
         min-height: 280px;
+        margin: 0 auto;
         background-color: $white-color;
         box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
         padding: 30px 10px 22px 10px;

@@ -6,6 +6,7 @@
 }
 .nav__container {
   display: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav__link:focus,
 .nav__link:hover {
@@ -14,7 +15,16 @@
 .btn {
   display: none;
   text-transform: uppercase;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $white-color;
+  background-color: $accent-color;
+  border: 2px solid $accent-color;
+  }
 }
+
 .mobile-menu-btn {
   background-color: transparent;
   border: transparent;
@@ -64,6 +74,7 @@
 
   &__link {
     color: $white-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__link--accent:focus,
   &__link--accent:hover {
@@ -91,7 +102,7 @@
   margin: 0 auto;
   color: $white-color;
   background-color: transparent;
-  border: 1px solid $accent-color;
+  border: 2px solid $accent-color;
   font-family: Montserrat;
   text-transform: uppercase;
   font-weight: 700;
@@ -99,16 +110,23 @@
   font-size: 12px;
   line-height: 1.21;
   letter-spacing: 0.08em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $white-color;
+  background-color: $accent-color;
+  border: 2px solid $accent-color;
+  }
 }
 
 @media screen and (min-width: 480px) {
   .header-section {
     display: block;
-    width: 480px;
   }
   .header__container {
     width: 440px;
-    padding: 30px 0px 0 0px;
+    padding: 30px 0 0 0;
     margin: 0 auto;
   }
   .mobile-menu__container {
@@ -121,12 +139,9 @@
 }
 
 @media screen and (min-width: 768px) {
-  .header-section {
-    width: 768px;
-  }
   .header__container {
-    width: 768px;
-    padding: 40px 40px 0 40px;
+    width: 688px;
+    padding: 40px 0 0 0;
   }
   .mobile-menu__container {
     width: 768px;
@@ -161,8 +176,8 @@
 }
 @media screen and (min-width: 1366px) {
   .header__container {
-    padding: 33px 191px 0 181px;
-    width: 1366px;
+    padding: 33px 0 0 0;
+    width: 1314px;
     margin: 0 auto;
   }
   .logo__img {
