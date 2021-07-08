@@ -1,3 +1,10 @@
+.hero-section {
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../images/hero/wave-mobile.png');
+}
+
 .hero__container {
   display: flex;
   flex-direction: column;
@@ -5,10 +12,6 @@
   justify-content: center;
   padding: 52px 20px 0px 20px;
   margin-bottom: -50px;
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url('../images/hero/wave-mobile.png');
 }
 .hero__left-container {
   display: block;
@@ -56,11 +59,14 @@
 }
 
 @media screen and (min-width: 768px) {
+  .hero-section {
+    background-image: url('../images/hero/wave-tablet.png');
+  }
+
   .hero__container {
     padding: 83px 18px 64px 42px;
     margin-bottom: -45px;
     flex-direction: row;
-    background-image: url('../images/hero/wave-tablet.png');
   }
   .hero__left-container {
     width: 332px;
@@ -80,13 +86,14 @@
 }
 
 @media screen and (min-width: 1366px) {
-  .hero__container {
-    margin: 0 auto;
-    padding: 45px 53px 0px 183px;
+  .hero-section {
     background-image: url('../images/hero/wave-desktop.png');
   }
-  .hero__left-container {
-    width: 642px;
+  .hero__container {
+    width: 1394px;
+    margin: 0 auto;
+    padding: 45px 0 0 40px;
+    align-items: flex-start;
   }
   .section__heading {
     font-weight: 800;
@@ -95,7 +102,8 @@
     letter-spacing: 0.03em;
   }
   .hero__left-container {
-    margin-top: 30px;
+    width: 642px;
+    margin-top: 50px;
     font-size: 20px;
     line-height: 1.65;
   }
@@ -106,4 +114,9 @@
   .hero__img {
     margin-bottom: 65px;
   }
+  .hero__quantity-points {
+    display: inline;
+    color: $main-color;
+  }
+
 }
