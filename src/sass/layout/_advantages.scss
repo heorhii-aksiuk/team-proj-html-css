@@ -78,7 +78,7 @@
     padding-top: 50px;
     padding-bottom: 45px;
     &__container {
-      width: 728px;
+      width: 688px;
     }
     &__list {
       width: unset;
@@ -87,11 +87,6 @@
       margin-top: -21px;
       margin-left: -21px;
     }
-    &__list li {
-      margin-top: 21px;
-      margin-left: 21px;
-      margin-bottom: unset;
-    }
   }
 }
 @media screen and (min-width: 1366px) {
@@ -99,9 +94,7 @@
     padding-top: 88px;
     padding-bottom: 115px;
     &__container {
-      width: 100%;
-      padding-right: 275px;
-      padding-left: 183px;
+      width: 1314px;
     }
     &__list {
       justify-content: space-between;
