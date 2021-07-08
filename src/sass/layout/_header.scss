@@ -14,7 +14,14 @@
 .btn {
   display: none;
   text-transform: uppercase;
+  &:hover,
+  &:focus {
+    color: $white-color;
+  background-color: $accent-color;
+  border: 2px solid $accent-color;
+  }
 }
+
 .mobile-menu-btn {
   background-color: transparent;
   border: transparent;
@@ -99,6 +106,12 @@
   font-size: 12px;
   line-height: 1.21;
   letter-spacing: 0.08em;
+  &:hover,
+  &:focus {
+    color: $white-color;
+  background-color: $accent-color;
+  border: 2px solid $accent-color;
+  }
 }
 
 @media screen and (min-width: 480px) {
