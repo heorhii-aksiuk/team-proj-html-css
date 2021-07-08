@@ -49,6 +49,8 @@
 
   &__form-btn {
     max-width: 260px;
+    padding-left: 43px;
+    padding-right: 43px;
     height: 48px;
     font-size: 12px;
     line-height: 1.25;
@@ -63,6 +65,12 @@
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      background-color: transparent;
+      border: 2px solid $accent-color;
+    }
   }
 }
 
@@ -136,10 +144,6 @@
     &__form-input {
       max-width: 440px;
     }
-
-    &__form-btn {
-      max-width: 260px;
-    }
   }
 
   .form-head {
@@ -180,6 +184,10 @@
 
     &__form-input {
       width: 390px;
+    }
+
+    &__form-btn {
+      min-width: 260px;
     }
   }
 
@@ -248,7 +256,7 @@
     }
 
     &__form-btn {
-      width: 354px;
+      min-width: 354px;
       height: 70px;
       font-size: 14px;
       line-height: 1.21;
