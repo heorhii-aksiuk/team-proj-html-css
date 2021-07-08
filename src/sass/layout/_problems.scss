@@ -49,21 +49,25 @@
     }
 
     &__title {
+        max-width: 440px;
         display: block;
         font-weight: 800;
         font-size: 24px;
         line-height: 1.36;
         letter-spacing: 0.03em;
+        margin: 0 auto;
         margin-bottom: 25px;
         text-align: left;
 
         color: $white-color;
 
         @media screen and (min-width: 768px) {
+            max-width: 768px;
             margin-bottom: 25px;
         }
 
         @media screen and (min-width: 1366px) {
+            max-width: 1366px;
             font-weight: 800;
             font-size: 46px;
             line-height: 1.30;
