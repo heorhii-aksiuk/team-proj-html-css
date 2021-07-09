@@ -81,11 +81,12 @@
       width: 688px;
     }
     &__list {
-      width: unset;
+      width: 688px;
       display: flex;
       flex-wrap: wrap;
       margin-top: -21px;
       margin-left: -21px;
+      justify-content: space-between;
     }
   }
 }
@@ -97,6 +98,7 @@
       width: 1314px;
     }
     &__list {
+      width: 1314px;
       justify-content: space-between;
     }
     &__list li:nth-child(1) {
